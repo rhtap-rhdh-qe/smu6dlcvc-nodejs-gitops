@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: smu6dlcvc-nodejs-gitops
+  description: This is GitOps manifest for smu6dlcvc-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: smu6dlcvc-nodejs
+    backstage.io/kubernetes-id: smu6dlcvc-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: smu6dlcvc-nodejs   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:smu6dlcvc-nodejs

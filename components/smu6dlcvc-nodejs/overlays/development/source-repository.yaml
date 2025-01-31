@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: smu6dlcvc-nodejs-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/smu6dlcvc-nodejs
